@@ -1,0 +1,24 @@
+:root{
+
+    --dim-2: 2px;
+    --dim-4: 4px;
+    --dim-8: 8px;
+    --dim-16: 16px;
+    --dim-32: 32px;
+    --dim-64: 64px;
+    --dim-128: 128px;
+    --dim-256: 256px;
+
+    --color-blue: #2B69F6;
+    --color-white: #FFFFFF;
+    --color-gray-light: #EBEBEB;
+
+    --roundness: 8px;
+    --roundness-full: 500px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
