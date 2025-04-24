@@ -9,9 +9,12 @@
     --dim-128: 128px;
     --dim-256: 256px;
 
-    --color-blue: #2B69F6;
+    --color-blue: #4596F7;
     --color-white: #FFFFFF;
-    --color-gray-light: #EBEBEB;
+    --color-gray-light: #D5D7DA;
+    --color-gray-bg: #F5F5F5;
+    --color-light-text: #535862;
+    --color-text-black: #101828;
 
     --roundness: 8px;
     --roundness-full: 500px;
@@ -21,4 +24,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--color-text-black);
+    box-sizing: border-box;
 }
