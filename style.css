@@ -263,4 +263,5 @@ body > p{
 .bottom-footer .logos i{
     padding: 0 var(--dim-8);
     color: var(black);
+    cursor: pointer;
 }
