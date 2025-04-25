@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Untitled UI</title>
 </head>
 
 <body>
-    <div class="grid-bg"></div>
     <div class="navbar">
-        <div class="navbar-logo">
+        <div class="navbar-logo" onclick="window.location.href='index.html'">
             <img src="../asserts/img/logo.png" alt="">
             <p>Untitled UI</p>
         </div>
@@ -29,8 +28,8 @@
             </select>
             <select name="" id="">
                 <option value="">Resources</option>
-                <option value="">Resources 2</option>
-                <option value="">Resources 3</option>
+                <option value="">Resources2</option>
+                <option value="">Resources3</option>
             </select>
             <a href="#">Pricing</a>
             <a href="#">FAQs</a>
@@ -50,8 +49,10 @@
         <p>Our philosophy is simple; hire great people and give them the <br>resources and support to do their best
             work.</p>
         <div class="n-buttons">
-            <button><i class="fa-regular fa-circle-play"></i> Book a demo</button>
-            <button>Get in touch</button>
+            <div class="btn-img">
+                <button class="btn-img"> <img src="asserts/img/play-circleIcon.png" alt=""> <span>Book a demo</span></button>
+                <button>Get in touch</button>
+            </div>
         </div>
     </div>
 
@@ -135,17 +136,18 @@
             <div class="contact-us">
                 <h3>Call us</h3>
                 <p>Call our team Mon-Fri 8am to 5pm</p>
-                <b><i class="fa-solid fa-phone-volume"></i> <u>+1(555)000-0000</u></b>
+                <b><img src="asserts/img/call-icon.png" alt="">
+                    <!--<i class="fa-solid fa-phone-volume"></i> --><u>+1(555)000-0000</u></b>
     
                 <h3>Chat with us</h3>
                 <p>Speak to our friendly team via live chat.</p>
-                <b> <i class="fa-solid fa-comments"></i> <u>Start a live chat</u></b>
-                <b> <i class="fa-regular fa-paper-plane"></i> <u>Shoot us an email</u></b>
+                <b> <img src="asserts/img/message-chat-circle.png" alt=""><!--<i class="fa-solid fa-comments"></i>--> <u>Start a live chat</u></b>
+                <b> <img src="asserts/img/shoot-email-Icon.png" alt=""> <u>Shoot us an email</u></b>
                 <b> <i class="fa-brands fa-twitter"></i> <u>Message us on tweeter</u></b>
     
                 <h3>Visit us</h3>
                 <p>Chat to us in person at our Melbourne HQ.</p>
-                <b> <i class="fa-solid fa-location-dot"></i> <u>100 Smith Street, Colligwood VIC 3066</u></b>
+                <b> <img src="asserts/img/location-Icon.png" alt=""> <u>100 Smith Street, Colligwood VIC 3066</u></b>
             </div>
         </div>
     </div>
@@ -171,48 +173,48 @@
             </div>
             <ul>
                 <li>Product</li>
-                <li>Overview</li>
-                <li>Features</li>
-                <li>Solutions</li>
-                <li>Tutorials</li>
-                <li>Pricing</li>
-                <li>Releases</li>
+                <a href="#" target="_blank"><li>Overview</li></a>
+                <a href="#" target="_blank"><li>Features</li></a>
+                <a href="#" target="_blank"><li>Solutions</li></a>
+                <a href="#" target="_blank"><li>Tutorials</li></a>
+                <a href="#" target="_blank"><li>Pricing</li></a>
+                <a href="#" target="_blank"><li>Releases</li></a>
             </ul>
             <ul>
                 <li>Company</li>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Press</li>
-                <li>News</li>
-                <li>Media Kit</li>
-                <li>Contact</li>
+                <a href="#" target="_blank"><li>About us</li></a>
+                <a href="#" target="_blank"><li>Careers</li></a>
+                <a href="#" target="_blank"><li>Press</li></a>
+                <a href="#" target="_blank"><li>News</li></a>
+                <a href="#" target="_blank"><li>Media Kit</li></a>
+                <a href="#" target="_blank"><li>Contact</li></a>
             </ul>
             <ul>
                 <li>Resources</li>
-                <li>Blog</li>
-                <li>Newsletter</li>
-                <li>Events</li>
-                <li>Help center</li>
-                <li>Tutorials</li>
-                <li>Support</li>
+                <a href="#" target="_blank"><li>Blog</li></a>
+                <a href="#" target="_blank"><li>Newsletter</li></a>
+                <a href="#" target="_blank"><li>Events</li></a>
+                <a href="#" target="_blank"><li>Help center</li></a>
+                <a href="#" target="_blank"><li>Tutorials</li></a>
+                <a href="#" target="_blank"><li>Support</li></a>
             </ul>
             <ul>
                 <li>Social</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-                <li>Facebook</li>
-                <li>Github</li>
-                <li>AngelList</li>
-                <li>Dribble</li>
+                <a href="https://twitter.com/" target="_blank"><li>Twitter</li></a>
+                <a href="https://pk.linkedin.com/" target="_blank"><li>LinkedIn</li></a>
+                <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
+                <a href="https://github.com/" target="_blank"><li>Github</li></a>
+                <a href="https://www.angellist.com/" target="_blank"><li>AngelList</li></a>
+                <a href="https://dribbble.com/" target="_blank"><li>Dribble</li></a>
             </ul>
             <ul>
                 <li>Legal</li>
-                <li>Terms</li>
-                <li>Privacy</li>
-                <li>Cookies</li>
-                <li>Licenses</li>
-                <li>Settings</li>
-                <li>Contact</li>
+                <a href="#" target="_blank"><li>Terms</li></a>
+                <a href="#" target="_blank"><li>Privacy</li></a>
+                <a href="#" target="_blank"><li>Cookies</li></a>
+                <a href="#" target="_blank"><li>Licenses</li></a>
+                <a href="#" target="_blank"><li>Settings</li></a>
+                <a href="#" target="_blank"><li>Contact</li></a>
             </ul>
 
         </div>

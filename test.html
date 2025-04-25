@@ -2,26 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>Stylized O</title>
   <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    #bg-img{
-      background-image: url("asserts/img/small-profile.jpg");
-      filter: grayscale(95%);
-      background-size: cover;
-      width: 40%;
-      height: 70vh;
-    }
+    .futuristic-o {
+    position: relative;
+    width: 200px;
+    height: 220px; /* Slightly taller container for better proportions */
+    margin: 50px;
+}
+
+.top-arc {
+    position: absolute;
+    width: 160px;
+    height: 50px; /* Reduced height */
+    border: 8px solid #000; /* Thinner stroke */
+    border-radius: 0 0 100px 100px;
+    border-top: 0;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-arc {
+    position: absolute;
+    width: 180px; /* Wider base */
+    height: 120px; /* Increased height */
+    border: 16px solid #000; /* Thicker stroke */
+    border-radius: 120px 120px 0 0; /* Flatter curve */
+    border-bottom: 0;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
   </style>
 </head>
 <body>
-  <div id="bg-img">
-    img
-  </div>
+  <div class="futuristic-o">
+    <div class="top-arc"></div>
+    <div class="bottom-arc"></div>
+</div>
 </body>
 </html>
