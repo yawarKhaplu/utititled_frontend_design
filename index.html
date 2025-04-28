@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div class="grid-bg"></div>
     <div class="navbar">
         <div class="navbar-logo" onclick="window.location.href='index.html'">
             <img src="../asserts/img/logo.png" alt="">
@@ -122,7 +123,16 @@
                     </div>
                     <div>
                         <label for="phone-no">Phone number</label>
-                        <input id="phone-no" type="text" placeholder="+1(555)000-0000">
+                        <div class="phone-no-input">
+                            <div class="country-code">
+                                <select name="" id="">
+                                    <option value="">US</option>
+                                    <option value="">+2</option>
+                                    <option value="">+3</option>
+                                </select>
+                            </div>
+                            <input id="phone-no" type="text" placeholder="+1(555)000-0000">
+                        </div>
                     </div>
                     <div class="message-div">
                         <label for="message">Message</label><br>
@@ -147,7 +157,7 @@
     
                 <h3>Visit us</h3>
                 <p>Chat to us in person at our Melbourne HQ.</p>
-                <b> <img src="asserts/img/location-Icon.png" alt=""> <u>100 Smith Street, Colligwood VIC 3066</u></b>
+                <b id="loc-img"> <img src="asserts/img/location-Icon.png" alt=""> <u>100 Smith Street, Colligwood VIC 3066</u></b>
             </div>
         </div>
     </div>
@@ -221,13 +231,13 @@
         <div class="bottom-footer">
             <p>© 2077 Untitled UI. All rights reserved.</p>
             <div class="logos">
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-telegram"></i>
-                <i class="fa-regular fa-hand-peace"></i>
-                <i class="fa-brands fa-dribbble"></i>
-                <i class="fa-brands fa-figma"></i>
-                <i class="fa-brands fa-signal-messenger"></i>
+                <a href="twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-github"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-telegram"></i></a>
+                <a href="twitter.com"><i class="fa-regular fa-hand-peace"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-figma"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-signal-messenger"></i></a>
             </div>
         </div>
     </div>
