@@ -44,7 +44,7 @@
     border: none;
     color: var(--color-text-black);
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--text-normal);
     font-style: normal;
     font-weight: 600;
 }
@@ -70,7 +70,7 @@
     box-sizing: border-box;
     padding: var(--dim-8) var(--dim-16);
     font-weight: 600;
-    font-size: 15px;
+    font-size: var(--text-normal);
     font-style: normal;
 }
 .n-buttons button:nth-child(1){
@@ -108,7 +108,7 @@
     font-family: 'Varela';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: var(--text-extra-large);
 }
 .team-intro h1, .team-intro p, .team-intro div{
     margin: var(--dim-8) 0;
@@ -117,7 +117,7 @@
     color: var(--color-light-text);
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 19px;
+    font-size: var(--text-large);
     font-style: normal;
 }
 .employee-card{
@@ -149,14 +149,14 @@
     color: var(--color-light-text);
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--text-medium);
     font-style: normal;
 }
 .employee div h3{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--text-large);
 }
 body > p{
     text-align: center;
@@ -175,7 +175,7 @@ body > p{
     border-radius: var(--roundness-full);
 }
 .small-profile-section > p{
-    font-size: 16px;
+    font-size: var(--text-normal);
 }
 
 .form-section{
@@ -193,7 +193,7 @@ body > p{
 }
 .form-heading h2{
     font-weight: 450;
-    font-size: 32px;
+    font-size: var(--text-medium-large);
 }
 .form-div{
     display: flex;
@@ -250,7 +250,7 @@ body > p{
     padding: var(--dim-4);
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 13px;
+    font-size: var(--text-small);
     font-style: normal;
     letter-spacing: -0.01em;
 }
@@ -298,7 +298,7 @@ body > p{
 .contact-us h3{
     padding-top: var(--dim-32);
     font-style: normal;
-    font-size: 19px;
+    font-size: var(--text-large);
     font-weight: 400;   
 }
 .contact-us p{
@@ -306,7 +306,7 @@ body > p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--text-normal);
     padding: var(--dim-8) 0;
 }
 .contact-us b{
@@ -316,7 +316,7 @@ body > p{
     font-style: normal;
     color: black;
     font-weight: 600;
-    font-size: 15px;
+    font-size: var(--text-normal);
     padding: var(--dim-4) 0;
     cursor: pointer;
 }
@@ -373,7 +373,7 @@ body > p{
 .middle-footer .logo-section div p{
     margin: var(--dim-16) 0;
     color: var(--color-light-text);
-    font-size: 15px;
+    font-size: var(--text-normal);
     font-family: 'Inter';
     font-style: normal;
 }
@@ -382,12 +382,12 @@ body > p{
     color: var(--color-light-text);
     padding: var(--dim-4) 0;
     font-weight: 500;
-    font-size: 13px;
+    font-size: var(--text-small);
     font-family: 'Inter';
     font-style: normal;
 }
 .middle-footer  ul  a[target="_blank"] li{
-    font-size: 15px;
+    font-size: var(--text-normal);
 }
 .middle-footer  ul  a[target="_blank"] li:hover{
     color: var(--color-blue);
@@ -404,7 +404,7 @@ body > p{
     color: var(--color-light-text);    
 }
 .bottom-footer .logos i{
-    font-size: 20px;
+    font-size: var(--text-xlarge);
     padding: 0 var(--dim-8);
     color: var(--color-light-text);
     cursor: pointer;
@@ -414,11 +414,27 @@ body > p{
 }
 .free-trail h2{
     font-weight: 500;
-    font-size: 28px;
+    font-size: var(--text-xxlarge);
     font-family: 'Inter';
     font-style: normal;
     line-height: 38px;
 }
 .logos i:nth-child(4){
     transform: scaleX(-1);
+}
+
+
+/* Responsive-ness  */
+
+@media screen and (max-width: 1000px) {
+ .nav-links{
+    display: none;
+ }   
+}
+
+@media screen and (max-width: 768px) {
+    .employee-card{
+        flex-direction: row;
+        flex-shrink: both;
+    }   
 }

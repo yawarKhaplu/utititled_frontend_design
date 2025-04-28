@@ -1,5 +1,15 @@
 :root{
 
+    --text-small: 12px;
+    --text-medium: 14px;
+    --text-normal: 16px;
+    --text-large: 18px;
+    --text-xlarge: 20px;
+    --text-xxlarge: 20px;
+    --text-medium-large: 32px;
+    --text-extra-large: 60px;
+
+
     --dim-2: 2px;
     --dim-4: 4px;
     --dim-8: 8px;
@@ -29,4 +39,25 @@
     box-sizing: border-box;
 
     transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --dim-2: 1px;
+        --dim-4: 2px;
+        --dim-8: 4px;
+        --dim-16: 8px;
+        --dim-32: 16px;
+        --dim-64: 32px;
+        --dim-128: 64px;
+        --dim-256: 128px;
+
+        --text-small: 10px;
+        --text-medium: 12px;
+        --text-normal: 14px;
+        --text-large: 16px;
+        --text-xlarge: 18px;
+        --text-xxlarge: 20px;
+    }
+    
 }
